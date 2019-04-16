@@ -1,0 +1,10 @@
+genes from ucsc browser
+
+expand them, then try split genome into N intervals
+with intervals only outside the gene regions.
+
+chr3, Y, and MT differ.
+MT is totally different - just replace with a single full region anyway
+3 differs only in a few non acgt -> N places. - just ignore
+Y differs in many N regions. with ucsc (genes.bed) having acgt instead of N (hs37)
+    - this should be safe to ignore.
