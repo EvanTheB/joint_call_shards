@@ -1,6 +1,15 @@
-genes from ucsc browser
+genes.bed from ucsc browser
+hs37d5x.dict from broad bundle // gatk
 
-expand them, then try split genome into N intervals
+usage: bash safe_intervals.sh
+output: hs37d5x.nogenes.20k.intervals
+
+genes bed and hs37 are different genomes, but practically
+only MT and decoys are different. And those don't matter here.
+
+process:
+
+pad genes, then try split genome into N intervals
 with intervals only outside the gene regions.
 
 chr3, Y, and MT differ.
